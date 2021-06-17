@@ -3,12 +3,17 @@
 }
 
 .header .container {
+    display:flex;
+    align-items: center;
 }
 
 .header__navigation {
+    display: flex;
+    align-items: center;
 }
 
 .menu {
+    display: flex;
 }
 
 .menu__item:not(:last-child) {
@@ -54,6 +59,8 @@
 
 
 .contacts {
+    display: flex;
+
 }
 
 .header__contacts {

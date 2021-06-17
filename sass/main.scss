@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/breakpoints";
 @import "./base/commons";
 @import "./base/container";
 @import "./base/section";
@@ -7,19 +8,19 @@
 @import "./components/modal-btn";
 @import "./components/logo";
 @import "./components/close-btn";
-@import "./layout/header";
+// @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/values";
-@import "./layout/activity";
-@import "./layout/team";
-@import "./components/social-list";
-@import "./layout/customers";
-@import "./layout/portfolio-filter-buttons";
-@import "./layout/portfolio-examples";
-@import "./layout/footer";
-@import "./layout/backdrop";
-@import "./layout/modal-window";
-@import "./layout/modal-form";
+// @import "./layout/activity";
+// @import "./layout/team";
+// @import "./components/social-list";
+// @import "./layout/customers";
+// @import "./layout/portfolio-filter-buttons";
+// @import "./layout/portfolio-examples";
+// @import "./layout/footer";
+// @import "./layout/backdrop";
+// @import "./layout/modal-window";
+// @import "./layout/modal-form";
 
 
 
