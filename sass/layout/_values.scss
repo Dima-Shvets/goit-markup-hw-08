@@ -2,11 +2,31 @@
 }
 
 .values-list {
-    
+    @media  screen and (min-width: 768px) {
+        display: flex;
+    } 
+
+    @media  screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+}
+
+.values-list__item {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+       width: 354px;
+       margin: 15px;  
+    }
 }
 
 .values-list__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
 }
 
 .values-list__block {
@@ -15,10 +35,19 @@
     justify-content: center;
     height: 120px;
     margin-bottom: 30px;
-    
     border-radius: 4px;
 
     background-color: var(--secondary-background-color);
+
+    display: flex;
+
+    @media  screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media  screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 
 .values-list__title {
@@ -28,6 +57,11 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .values-list__text {
@@ -36,41 +70,5 @@
     letter-spacing: 0.03em;
 }
 
-// .values {
-//     padding-top: 125px;
-// }
 
-// .values-list {
-//     display: flex;
-// }
 
-// .values-list__item:not(:last-child) {
-//     margin-right: 30px;
-// }
-
-// .values-list__block {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 270px;
-//     height: 120px;
-//     margin-bottom: 30px;
-//     border-radius: 4px;
-
-//     background-color: var(--secondary-background-color);
-// }
-
-// .values-list__title {
-//     margin-bottom: 10px;
-
-//     color: var(--secondary-text-color);
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.03em;
-// }
-
-// .values-list__text {
-//     font-size: 14px;
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-// }
