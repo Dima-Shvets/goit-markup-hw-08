@@ -2,6 +2,17 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.filter__item {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
 
 .filter__item:not(:last-child) {
