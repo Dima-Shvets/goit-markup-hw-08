@@ -1027,10 +1027,13 @@ body {
   position: absolute;
   bottom: 50%;
   right: 50%;
-  height: 581px;
-  width: 528px;
+  height: 100%;
+  width: calc(100% - 30px);
   border-radius: 4px;
   padding: 40px;
+  margin-left: 15px;
+  margin-left: 15px;
+  overflow: auto;
   background: var(--background-color);
   transform: translate(50%, 50%) scale(1);
   transition: transform var(--transition-time) var(--transiton-function);
@@ -1038,6 +1041,25 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: translate(50%, 50%) scale(1.1);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-height: 609px) {
+  .modal {
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 
 .modal__title {
@@ -1061,6 +1083,7 @@ body {
 .modal-form {
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .modal-form__field:not(:last-child) {
