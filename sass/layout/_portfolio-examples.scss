@@ -1,13 +1,17 @@
 .examples {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
-.card__item {
-    margin: 15px;
-    box-shadow: none;
-    /* flex-basis: calc((100%-60px)/3); */
+.card {
+    margin-bottom: 30px;
+    border-right: 1px solid var(--portfolio-border-color);
+    border-bottom: 1px solid var(--portfolio-border-color);
+    border-left: 1px solid var(--portfolio-border-color); 
+    box-shadow: none; 
 
     transition: box-shadow var(--transition-time) var(--transiton-function);
 
@@ -16,6 +20,15 @@
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    @media screen and (min-width:768px) {
+        margin: 15px;
+        width: calc((100% - 60px)/2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/3);
     }
 }
 
@@ -31,13 +44,11 @@
 
 .card__content {
     padding: 20px 24px;
-    border-right: 1px solid var(--portfolio-border-color);
-    border-bottom: 1px solid var(--portfolio-border-color);
-    border-left: 1px solid var(--portfolio-border-color); 
 }
 
 .card__image {
     display: block;
+    max-width: 100%;
 }
 
 .card__title {
