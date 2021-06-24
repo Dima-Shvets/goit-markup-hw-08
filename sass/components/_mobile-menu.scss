@@ -5,15 +5,22 @@
     overflow: auto;
 
     position: fixed;
+    top: 0;
     right: 0;
-    bottom: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 100;
 
     background-color: #fff;
+
+    transform: translateX(100%);
+    transition: opacity var(--transition-time) var(--transiton-function),
+    visibility var(--transition-time) var(--transiton-function),
+    transform var(--transition-time) var(--transiton-function);
 }
 
 .mobile-menu.is-open {
+    transform: translateX(0);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -35,6 +42,8 @@
 
 .mobile-menu-close-btn__icon {
     fill: var(--secondary-text-color);
+
+    transition: fill var(--transition-time) var(--transiton-function);
 
     &:hover,
     &:focus {
@@ -93,6 +102,7 @@
 
 .mobile-menu-social-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .mobile-menu-social-list__item {
